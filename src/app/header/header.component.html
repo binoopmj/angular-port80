@@ -13,18 +13,9 @@
     <a href="#">
         <img src="./assets/images/logo.png" class="logo"  width="200" height="46"/>
     </a>
-    <ul class="main-nav">
-      <li>
-        <a href="#">Disrupt Kerala</a>
-      </li>
-      <li>
-        <a href="#">Speakers</a>
-      </li>
-      <li>
-        <a href="#">Gallery</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
+    <ul class="main-nav" *ngIf="mainmenu.length">
+      <li *ngFor="let menu of mainmenu">
+        <a href='{{menu.link}}'>{{menu.pageName}}</a>
       </li>
       
     </ul>

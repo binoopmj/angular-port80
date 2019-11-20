@@ -7,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  mainmenu: any[] = [
+    {
+      "pageName" : "Disrupt Kerala",
+      "link" : "/disrupt-kerala"
+    },
+    {
+      "pageName" : "Speakers",
+      "link" : "/speakers"
+    },
+    {
+      "pageName" : "Gallery",
+      "link" : "/gallery"
+    },
+    {
+      "pageName" : "Contact",
+      "link" : "/contact"
+    }
+  ];
   constructor() { }
 
   ngOnInit() {
